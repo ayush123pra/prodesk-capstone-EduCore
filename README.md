@@ -103,22 +103,4 @@ The Zustand store will manage mock JSON structures representing the application 
 ## 14. UI/UX Wireframes
 The UI is designed mobile-first, targeting three core viewports: Authentication, Dashboards, and the Learning Player.
 
-🔗 **Figma Wireframes:** `[Insert Figma Public Link Here]`
-
-## 15. Architecture & State Tree
-The application relies on a modular Zustand store structure interacting with Mock Next.js Route Handlers.
-
-```mermaid
-graph TD
-    UI[React Components] -->|Dispatches Actions| Store[Zustand Root Store]
-    
-    Store --> AuthSlice[Auth Slice]
-    Store --> CourseSlice[Course Slice]
-    Store --> ProgressSlice[Progress Slice]
-    
-    AuthSlice -->|Reads/Writes| LocalStorage[(Local Storage Session)]
-    
-    CourseSlice -->|Fetches Mock Data| MockAPI[Next.js Route Handlers]
-    ProgressSlice -->|Mutates Mock Data| MockAPI
-    
-    MockAPI -.->|Simulates DB| MockJSON[(Mock JSON DB)]# prodesk-capstone-EduCore
+🔗 **Figma Wireframes:**
